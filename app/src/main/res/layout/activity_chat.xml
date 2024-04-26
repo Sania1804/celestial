@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@drawable/routine_display"
+    tools:context=".chat">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:contentPadding="20dp"
+        android:backgroundTint="@color/misty_rose">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What's your Skin Type?"
+        android:textColor="@color/grey_blue"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        />
+
+        <RadioGroup
+            android:id="@+id/radioGrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/normal"
+                android:layout_marginTop="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal"
+                android:textSize="24sp"
+                android:textColor="@color/grey_blue"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/oily"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oily"
+                android:textSize="24sp"
+                android:textColor="@color/grey_blue"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/dry"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dry"
+                android:textSize="24sp"
+                android:textColor="@color/grey_blue"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/sensitive"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sensitive"
+                android:textSize="24sp"
+                android:textColor="@color/grey_blue"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/combination"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Combination"
+                android:textSize="24sp"
+                android:textColor="@color/grey_blue"
+                android:textStyle="bold"/>
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:layout_marginStart="100dp"
+            android:text="Next"
+            android:backgroundTint="@color/grey_blue"
+            android:id="@+id/btn"/>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>
